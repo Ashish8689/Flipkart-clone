@@ -1,0 +1,17 @@
+body{
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --main-color:#f7e732;
+    --secondary-color:#037cd7;
+    --button-color:#ff9f00;
+    --title-color:#ffffff;
+    --bold-color:#212121;
+}
+
+a:hover{
+  text-decoration: none;
+}

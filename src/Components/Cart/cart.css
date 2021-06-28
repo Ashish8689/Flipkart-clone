@@ -1,0 +1,231 @@
+.cart-body-container{
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex: wrap;
+}
+
+.cart-body-left{
+    flex: 72%;
+}
+
+.cart-body-right{
+    flex: 28%;
+}
+
+.subtotal-container{
+    margin:0 10px;
+    background: #fafaf6; 
+    padding: 20px;
+}
+
+.subtotal-container p{
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.subtotal-container button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    border:none;
+    background: var(--button-color);
+    padding: 8px 30px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+
+
+/* **********************   Cart Block  **************************** */
+
+.cart-block{
+    width: 100%;
+    margin: 0 auto 20px;
+    height: 200px;
+    position: relative;
+    background: #fafaf6;
+    border-radius: 4px;
+}
+
+.cart-block .cart-flex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+ }
+
+.cart-block .cart-flex .cart-left{
+    flex: 35%;
+    width: 100%;
+    height: 100%;
+}
+.cart-block .cart-flex .cart-right{
+    flex: 65%;
+}
+
+.cart-block .cart-img-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-favourite-container{
+     position: absolute;
+     top: 20px;
+     right: 30px;
+     cursor: pointer;
+} 
+
+.cart-block .cart-img-container img{
+ width: 90%;
+ height: 90%;
+ object-fit: contain;
+}
+
+
+.cart-content-container{
+ padding: 20px;
+ max-width: 90%;
+}
+.cart-content-container .cart-title{
+    max-width: 450px;
+    font-size: 20px;   
+    font-weight: 600;
+}
+
+.cart-content-container .cart-para{
+font-size: 14px;   
+}
+
+.cart-content-container .cart-price{
+   font-size: 17px;   
+}
+
+.cart-content-container button{
+ padding: 10px 30px; 
+ border: none;
+ margin-top: 14px;
+ background: var(--button-color);
+ font-size: 13px;
+ font-weight: 600;
+ border-radius: 4px;
+ transition: .3s ease-in;
+}
+
+.cart-content-container button .cart-cart-icon{
+ margin-right: 4px;
+ font-size: 20px;
+ cursor: pointer;
+}
+
+.cart-content-container button:hover{
+ background: var(--secondary-color);
+ color: var(--title-color);
+}
+
+.inCartbutton{
+ color: var(--bold-color);
+ text-transform: uppercase;
+ font-size: 14px!important;
+ opacity: .9;
+}
+
+
+.cart-text-container{
+ width: 100%;
+ height: 73vh;
+ display: grid;
+ place-items: center;
+}
+
+.cart-text-container h1{
+ font-size: 40px;
+ font-weight: 700;
+}
+
+.cart-text-container h1 span{
+ color: var(--secondary-color);
+}
+
+
+/* ***********************   Quantity select box  *************************** */
+
+
+.quantity-container{
+    position: absolute;
+    top:20px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90px;
+    height: 35px;
+    padding:10px 5px;
+    background: #d9dad7;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+/* Arrow */
+.quantity-container::after {
+    position: absolute;
+    content: "\f078";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    font-size: 11px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 9px;
+    color: var(--bold-color);
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+  }
+  /* Transition */
+  .quantity-container:hover::after {
+    color: var(--secondary-color);
+  }
+  
+
+.quantity-container label{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bold-color);
+    padding-left: 4px;
+}
+
+.quantity-container select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #d9dad7;
+    background-image: none;
+}
+
+/* Remove IE arrow */
+.quantity-container select::-ms-expand {
+    display: none;
+}
+
+.quantity-container select{
+    flex: 1;
+    padding: 0 .5em;
+    color: var(--bold-color);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
